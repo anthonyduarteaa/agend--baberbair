@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0e08">
+  <title>Banana · Barbearia</title>
+  <meta name="description" content="Banana — barbearia. Corte, barba e navalha em um só ritual.">
+
+  <link rel="icon" type="image/png" href="/public/assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body id="top">
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="header">
+    <a class="brand" href="#top" aria-label="Banana Barbearia — início">
+      <span class="brand__mark">
+        <img src="/public/assets/logo.png" alt="Banana Barbearia" width="38" height="38">
+      </span>
+      <span class="brand__text">
+        <strong>Banana</strong>
+        <small>barbearia</small>
+      </span>
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-hidden="true">
+    <label class="burger" for="nav-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="nav__cta">
+        <span>Agendar</span>
+        <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h9M6 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__glow hero__glow--a"></span>
+        <span class="hero__glow hero__glow--b"></span>
+        <span class="hero__grid"></span>
+      </div>
+
+      <div class="hero__inner">
+
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--pulse">
+            <span class="eyebrow__dot"></span>
+            Barbearia · desde a primeira curva
+          </p>
+
+          <h1 class="hero__title">
+            <span class="hero__word hero__word--fill">Banana</span>
+            <span class="hero__word hero__word--stroke">Barbearia</span>
+          </h1>
+
+          <p class="hero__text">
+            Um corte desenhado no detalhe, uma barba feita com calma e uma
+            navalha que respeita o seu rosto. Simples assim — e o nome,
+            a gente leva no humor.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#contato">
+              <span>Agendar horário</span>
+              <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h9M6 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#servicos">
+              <span>Ver serviços</span>
+            </a>
+          </div>
+
+          <dl class="hero__stats">
+            <div>
+              <dt>Corte</dt>
+              <dd>tesoura + navalha</dd>
+            </div>
+            <div>
+              <dt>Barba</dt>
+              <dd>toalha quente</dd>
+            </div>
+            <div>
+              <dt>Acabamento</dt>
+              <dd>na régua</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+
+          <span class="ring ring--outer"></span>
+          <span class="ring ring--mid"></span>
+          <span class="ring ring--inner"></span>
+
+          <div class="pole">
+            <span class="pole__barber"></span>
+            <span class="pole__sheen"></span>
+            <span class="pole__cap pole__cap--t"></span>
+            <span class="pole__cap pole__cap--b"></span>
+            <span class="pole__base"></span>
+          </div>
+
+          <span class="banana banana--a"></span>
+          <span class="banana banana--b"></span>
+          <span class="banana banana--c"></span>
+
+        </div>
+
+      </div>
+
+      <a class="scroll-hint" href="#servicos" aria-hidden="true">
+        <span class="scroll-hint__line"></span>
+        <span class="scroll-hint__label">scroll</span>
+      </a>
+    </section>
+
+    <!-- ============================ MARQUEE ============================ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Corte</span><i></i>
+          <span>Barba</span><i></i>
+          <span>Navalha</span><i></i>
+          <span>Banana</span><i></i>
+          <span>Ritual</span><i></i>
+          <span>Detalhe</span><i></i>
+        </div>
+        <div class="marquee__group">
+          <span>Corte</span><i></i>
+          <span>Barba</span><i></i>
+          <span>Navalha</span><i></i>
+          <span>Banana</span><i></i>
+          <span>Ritual</span><i></i>
+          <span>Detalhe</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ SERVIÇOS ============================ -->
+    <section class="section services" id="servicos">
+      <header class="section__head">
+        <p class="eyebrow"><span class="eyebrow__num">01</span> Serviços</p>
+        <h2 class="section__title">
+          O que sai<br>
+          da nossa <em>casca</em>
+        </h2>
+        <p class="section__lede">
+          Cada atendimento começa no ouvido e termina no espelho. Você escolhe
+          o estilo, a gente desenha o acabamento.
+        </p>
+      </header>
+
+      <ul class="cards">
+        <li class="card">
+          <span class="card__num">01</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="14" cy="14" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="26" cy="14" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 19 L 26 34 M 26 19 L 14 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Corte</h3>
+          <p>Tesoura, máquina e navalha no mesmo movimento. O desenho certo
+             para o formato do seu rosto — sem pressa, sem excesso.</p>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </li>
+
+        <li class="card">
+          <span class="card__num">02</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="8" y="6" width="24" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="18" width="24" height="4" fill="currentColor"/>
+              <path d="M18 22 L 18 34 M 22 22 L 22 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 34 H 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Barba</h3>
+          <p>Toalha quente, óleo e lâmina afiada. O contorno desenhado na régua
+             e o volume respeitando o seu rosto.</p>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </li>
+
+        <li class="card">
+          <span class="card__num">03</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="6" y="10" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M28 17 L 34 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 27 H 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Navalha</h3>
+          <p>O acabamento que separa o corte bom do corte impecável. Pele lisa,
+             linha limpa, do pescoço à nuca.</p>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </li>
+
+        <li class="card">
+          <span class="card__num">04</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="6" y="12" width="28" height="6" rx="2" fill="currentColor"/>
+              <path d="M9 18 V 32 M 13 18 V 32 M 17 18 V 32 M 21 18 V 32 M 25 18 V 32 M 29 18 V 32"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Detalhes</h3>
+          <p>Sobrancelha, pezinho e finalização com o produto certo para o seu
+             tipo de fio. O toque que fecha o conjunto.</p>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================ RITUAL ============================ -->
+    <section class="section ritual" id="ritual">
+      <header class="section__head section__head--center">
+        <p class="eyebrow"><span class="eyebrow__num">02</span> O ritual</p>
+        <h2 class="section__title">
+          Três tempos,<br>
+          uma <em>curva</em> só
+        </h2>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">i</span>
+          <h3>A conversa</h3>
+          <p>Antes da primeira tesourada, a gente escuta: rotina, formato do
+             rosto, o que você quer evitar. O corte começa no ouvido.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">ii</span>
+          <h3>A construção</h3>
+          <p>Máquina, tesoura e navalha em camadas. Cada linha nasce da
+             anterior, até o desenho fechar sozinho no espelho.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">iii</span>
+          <h3>O acabamento</h3>
+          <p>Toalha quente, navalha e o produto certo. É o detalhe que faz o
+             corte parecer novo por muito mais tempo.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============================ CONTATO ============================ -->
+    <section class="section contact" id="contato">
+      <div class="contact__grid">
+
+        <div class="contact__intro">
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Contato</p>
+          <h2 class="section__title">
+            Agende<br>
+            seu <em>horário</em>
+          </h2>
+          <p class="section__lede">
+            Conta o que você procura e a gente confirma o melhor horário para
+            você — pelo canal que preferir.
+          </p>
+
+          <ul class="contact__links">
+            <li>
+              <a href="#">
+                <span class="contact__links-label">WhatsApp</span>
+                <span class="contact__links-value">+55 00 00000-0000</span>
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 L 10 2 M 4 2 H 10 V 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="contact__links-label">Instagram</span>
+                <span class="contact__links-value">@banana.barbearia</span>
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 L 10 2 M 4 2 H 10 V 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="contact__links-label">E-mail</span>
+                <span class="contact__links-value">oi@banana.barber</span>
+                <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 L 10 2 M 4 2 H 10 V 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" action="#" method="post" autocomplete="on">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Como te chamamos?" required>
+          </div>
+
+          <div class="field">
+            <label for="fone">WhatsApp</label>
+            <input id="fone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+          </div>
+
+          <div class="field">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="mensagem" rows="4"
+                      placeholder="Corte, barba, dia e horário que prefere..."></textarea>
+          </div>
+
+          <button class="btn btn--solid btn--wide" type="submit">
+            <span>Enviar pedido</span>
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h9M6 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="footer__word" aria-hidden="true">Banana</div>
+    <div class="footer__base">
+      <span class="footer__base-left">
+        <span class="footer__dot" aria-hidden="true"></span>
+        Barbearia Banana
+      </span>
+      <span class="footer__base-mid">Corte · Barba · Navalha</span>
+      <span class="footer__base-right">© <span id="year"></span> — feito com navalha</span>
+    </div>
+  </footer>
+
+</body>
+</html>
